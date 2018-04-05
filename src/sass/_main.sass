@@ -1,0 +1,358 @@
+.header
+	.top-box
+		padding: 32px 0
+	.nav-box
+		background: #f8f6fd
+		border-top: 1px solid #d7d7d7
+		border-bottom: 1px solid #d7d7d7
+		+box
+		+clr
+		.catalog
+			
+			text-transform: uppercase
+			border-right: 1px solid #d7d7d7
+			border-left: 1px solid #d7d7d7
+			padding: 22px 0
+			a
+				color: #46444f
+				font-family: MuseoSansCyrl-500
+				display: block
+				text-align: center
+				font-weight: 400
+				font-size: 18px
+		.nav
+			li
+				a
+					font-size: 18px
+					color: #46444f
+					font-family: MuseoSansCyrl-100
+					font-weight: 400
+					padding: 0	42px
+		.cart
+			position: relative
+			.cart-icon
+				font-size: 18px
+				text-transform: uppercase
+				color: #46444f
+				font-family: MuseoSansCyrl-100
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					width: 20px
+					height: 20px
+					left: -30px
+					top: 0
+					background: url("../img/bag.svg") 0 0 no-repeat
+.slideshow
+	overflow: hidden
+	.slick-list
+		overflow: initial
+		.slick-slide
+			margin: 10px 10px 0 10px
+			img
+				opacity: 0.6
+		.slick-current
+			img
+				opacity: 1
+	.slick-arrow
+		position: absolute
+		bottom: 0
+		z-index: 1
+		cursor: pointer
+	.icon-r-arrow
+		right: -50px
+	.icon-l-arrow
+		left: -50px
+.categories
+	padding: 80px 0
+	.item
+		.img
+			height: 65px
+		.name
+			text-align: center
+			font-family: MuseoSansCyrl-100
+			font-size: 18px
+			color: #27242f
+			padding: 15px 0
+			line-height: 1.4rem
+			text-decoration: none
+		a
+			text-decoration: none	
+	.slick-arrow
+		width: 50px
+		height: 50px
+		position: absolute
+		top: 50%
+		display: inline-block
+		margin-top: -25px
+		cursor: pointer
+		z-index: 1
+	.icon-cat-arrow-l
+		left: -50px
+		background: url('../img/arrow_left_circle.svg') 0 0 no-repeat
+		&:hover
+			background: url("../img/arrow_left_circle_hover.svg") 0 0 no-repeat
+	.icon-cat-arrow-r
+		right: -50px
+		background: url("../img/arrow_right_circle.svg") 0 0 no-repeat
+		&:hover
+			background: url("../img/arrow_right_circle_hover.svg") 0 0 no-repeat
+.latest
+	margin-bottom: 80px
+	.slide-products
+		.item
+			margin: 0 10px
+	.tooltip
+		display: block
+		position: absolute
+		margin-top: 20px
+		opacity: 0
+		visibility: hidden
+		-webkit-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		-moz-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		-o-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		button
+			margin: 0 5px
+	.item
+		&:hover
+			.tooltip
+				margin-top: -75px
+				opacity: 1
+				visibility: visible
+				-webkit-transition-delay: 0s
+				-moz-transition-delay: 0s
+				-o-transition-delay: 0s
+				transition-delay: 0s
+			img
+				opacity: 0.6
+				-webkit-transition-delay: 0s
+				-moz-transition-delay: 0s
+				-o-transition-delay: 0s
+				transition-delay: 0s
+	.name
+		a
+			font-size: 24px
+			font-family: MuseoSansCyrl-300
+			color: #46444f
+			padding: 10px 0
+			text-decoration: none
+			display: inline-block
+	.price
+		color: #a46ece
+		font-size: 30px
+	.slick-arrow
+		position: relative
+		margin-bottom: -6px
+.news
+	padding: 0 0 80px 0
+	border-bottom: 1px solid #d7d7d7
+	.news-slide
+		.item
+			border: 1px solid #d7d7d7
+			background: #f8f6fd
+			margin: 0 10px
+			.inner
+				padding: 35px 39px
+				.info
+					margin-bottom: 45px
+				.date
+					span
+						vertical-align: -webkit-baseline-middle
+						font-size: 18px
+						line-height: 24px
+						font-family: MuseoSansCyrl-100
+						color: #46444f
+
+				.label
+					span
+						border-radius: 17px
+						color: #fff
+						font-size: 18px
+						font-family: MuseoSansCyrl-300
+						padding: 7px 27px
+						line-height: 1
+						height: 33px
+					.new
+						background: #5aca61
+					.actual
+						background: #a46ece
+				.description
+					.name
+						color: #5f0fb3
+						text-transform: uppercase
+						font-size: 24px
+						font-family: MuseoSansCyrl-700
+						margin-bottom: 25px
+						display: inline-block
+					a
+						text-decoration: none
+					.text
+						font-size: 18px
+						line-height: 24px
+						color: #46444f
+
+			.more
+				border-top: 1px solid #d7d7d7
+				a
+					padding: 21px 0
+					font-size: 18px
+					line-height: 24px
+					color: #a46ece
+					font-family: MuseoSansCyrl-100
+	.all-news
+		background: #5f0fb3
+		height: 63px
+		font-size: 24px
+		font-family: MuseoSansCyrl-300
+		line-height: 3rem
+		width: 215px
+		color: #ffffff
+	.slick-arrow
+		position: relative
+		margin-bottom: -6px
+.instagram
+	padding: 80px 0
+.category
+	padding: 0 0 80px 0
+	.heading-title
+	.tooltip
+		display: block
+		position: absolute
+		margin-top: 20px
+		opacity: 0
+		visibility: hidden
+		-webkit-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		-moz-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		-o-transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s
+		button
+			margin: 0 5px
+	.item
+		margin-bottom: 20px
+		&:hover
+			.tooltip
+				margin-top: -75px
+				opacity: 1
+				visibility: visible
+				-webkit-transition-delay: 0s
+				-moz-transition-delay: 0s
+				-o-transition-delay: 0s
+				transition-delay: 0s
+			img
+				opacity: 0.6
+				-webkit-transition-delay: 0s
+				-moz-transition-delay: 0s
+				-o-transition-delay: 0s
+				transition-delay: 0s
+	.name
+		font-size: 24px
+		font-family: MuseoSansCyrl-300
+		color: #46444f
+		padding: 10px 0
+	.price
+		color: #a46ece
+		font-size: 30px
+.category-description
+	border-top: 1px solid #d7d7d7
+	.text
+		h3
+			font-size: 24px
+			line-height: 30px
+			color: #5f0fb3
+			font-family: MuseoSansCyrl-700
+			text-transform: uppercase
+			margin-bottom: 20px
+		p
+			font-size: 18px
+			line-height: 30px
+			font-family: MuseoSansCyrl-100
+			color: #46444f
+.footer
+	background: #f8f6fd
+	border-top: 1px solid #d7d7d7
+	padding: 80px 0
+	.social_title
+		font-size: 18px
+		line-height: 36px
+		color: #46444f
+		font-family: MuseoSansCyrl-100
+		display: inline-block	
+		margin-bottom: 5px
+	.footer-info
+		li
+			a
+				color: #46444f
+				font-family: MuseoSansCyrl-100
+				font-size: 18px
+				line-height: 36px
+	.newsletter-title
+		font-family: MuseoSansCyrl-100
+		font-size: 18px
+		line-height: 36px
+		text-transform: uppercase
+		color: #46444f
+		display: inline-block
+		margin-bottom: 23px
+	.newsletter
+		position: relative
+		margin-bottom: 50px
+		input
+			width: 100%
+			border: 1px solid #d7d7d7
+			border-radius: 30px
+			height: 63px
+		.input-group-btn
+			position: absolute
+			right: 0
+			top: 0
+			button 
+				height: 62px
+				font-size: 24px
+				padding: 0 35px
+				color: #fff
+				font-family: MuseoSansCyrl-300
+				background: #5f0fb3
+				border-radius: 30px
+.socials
+	margin: 0
+	li
+		position: relative
+		display: inline-block
+		margin-right: 10px
+		a
+			width: 50px
+			height: 50px
+			display: inline-block
+			vertical-align: -webkit-baseline-middle
+.info
+	margin-bottom: 0
+	li
+		position: relative
+		display: inline-block
+		a
+			display: inline-block
+			vertical-align: -webkit-baseline-middle
+.insta
+	background: url('../img/inst_circle.svg') 0 0 no-repeat
+	&:hover
+		background: url("../img/inst_circle_hover.svg") 0 0 no-repeat
+.facebook
+	background: url("../img/facebook_circle.svg") 0 0 no-repeat
+	&:hover
+		background: url("../img/facebook_circle_hover.svg") 0 0 no-repeat
+.mail
+	background: url("../img/mail_circle.svg") 0 0 no-repeat
+	&:hover
+		background: url("../img/mail_circle_hover.svg") 0 0 no-repeat
+.search
+	width: 50px
+	height: 50px
+	background: url("../img/search_circle.svg") 0 0 no-repeat
+	&:hover
+		background: url("../img/search_circle_hover.svg") 0 0 no-repeat
+.phone
+	width: 50px
+	height: 50px
+	background: url("../img/phone_circle.svg") 0 0 no-repeat
